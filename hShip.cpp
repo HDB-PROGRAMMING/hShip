@@ -226,6 +226,9 @@ int main() {
 		gotoxy(7, 1); printf("Puntos: %d", points);
  
 		if ((points % 2000 == 0) && points != 0) {
+			if ((points % 4000 == 0) && points != 0) {
+				asteroids.push_back(new asteroid(rand() % 115 + 2, rand() % 3 + 4));
+			}
 			Ship.incrementLives();
 			points += 100;
 		}

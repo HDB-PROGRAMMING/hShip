@@ -238,6 +238,13 @@ int main() {
 			if (key == 'z' || key == ' ') {
 				bullets.push_back(new bullet(Ship.getX() + 2, Ship.getY() - 1));
 			}
+			if (key == 'p') {
+				gotoxy(58, 14); printf("HSHIP");
+				gotoxy(38, 15); printf("Pulsa cualquier tecla para continuar con el juego");
+				system("pause> NUL");
+				gotoxy(58, 14); printf("     ");
+				gotoxy(38, 15); printf("                                                 ");
+			}
 			if (key == 'l' && DEBUG_MODE) {
 				points += 100;
 			}
